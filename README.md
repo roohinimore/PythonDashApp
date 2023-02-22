@@ -28,7 +28,7 @@ OR
 > docker push {your azure container registry URL}/dashapp1:0.0.1
 
 
-- Create Web App service resource and select Azure Docker Registry as a source and your pushed image 
+- Create Web App service resource and select Azure Docker Registry as a source and select pushed image 
 
 # Reference
 https://learn.microsoft.com/en-us/training/modules/deploy-run-container-app-service/
