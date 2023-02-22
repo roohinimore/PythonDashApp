@@ -10,15 +10,23 @@ Dash helps data scientists to build analytical web applications without requirin
 - Create interactive Dashboard project with Plotly Dash framework
 - Create Docker image locally through the docker file provided in repo, e.g. dashapp1
 > docker build -t dashapp1 .
+
 > docker run -it --rm -p 3000:3000 dashapp1
 
+
 - Create Azure Container Registry resource in Azure Portal and login from command prompt or Azure CLI locally
-> docker login 'your azure container registry URL' OR
-> az acr login --name 'your azure container registry URL'
+> docker login 'your azure container registry URL'
+
+OR
+
+> az acr login --name {your azure container registry URL}
+
 
 - Once Login succeeded tag image and push into Azure Container Registry
-> docker tag dashapp1 'your azure container registry URL'/dashapp1:0.0.1
-> docker push 'your azure container registry URL'/dashapp1:0.0.1
+> docker tag dashapp1 {your azure container registry URL}/dashapp1:0.0.1
+
+> docker push {your azure container registry URL}/dashapp1:0.0.1
+
 
 - Create Web App service resource and select Azure Docker Registry as a source and your pushed image 
 
